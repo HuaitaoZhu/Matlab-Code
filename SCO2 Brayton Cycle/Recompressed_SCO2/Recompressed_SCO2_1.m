@@ -63,7 +63,6 @@ n_co2=(Wt_co2-Wc_co2)/Q_co2;
 
 
 %%
-%Segmented processing (LTR,HTR and IHX)
 para.node1=100;%nodes number of PCHE of co2-co2
 [dt_co2_1,hot_co2_1,cold_co2_1,Q_n_1]=segmented(co2(10,:),co2(6,:),para.m_co2,'CO2',co2(2,:),co2(7,:),rs*para.m_co2,'CO2',para.node1);
 [dt_co2_2,hot_co2_2,cold_co2_2,Q_n_2]=segmented(co2(5,:),co2(10,:),para.m_co2,'CO2',co2(9,:),co2(3,:),para.m_co2,'CO2',para.node1);
